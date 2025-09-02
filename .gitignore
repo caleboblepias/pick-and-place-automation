@@ -1,40 +1,118 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
+# ============================
+# Keil MDK (uVision) Ignored Files
+# ============================
 
-# Temporary files
-*.000
+# Build outputs
+*.axf
+*.elf
+*.hex
+*.map
+*.o
+*.d
+*.crf
+*.lnp
+*.plg
 *.bak
-*.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*-backups
-*-cache*
-*-bak
-*-bak*
-*~
-~*
-_autosave-*
-\#auto_saved_files\#
 *.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-~*.lck
-\#auto_saved_files#
+*.log
+*.tra
+*.iex
+*.htm
+*.lst
+*.tmk
 
-# Netlist files (exported from Eeschema)
-*.net
+# IDE configuration (user-specific)
+*.uvopt*
+*.uvgui.*
 
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
+# Debug and release folders
+Debug/
+Release/
+Objects/
+Listings/
+Flash/
+DebugConfig/
+*.dep
 
-# Exported BOM files
-*.xml
-*.csv
+# RTE (Real-Time Environment) auto-generated
+firmware/RTE/
+firmware/RTE_Components.h
 
-# Archived Backups (KiCad 6.0)
-**/*-backups/*.zip
+# ============================
+# KiCad (v6/v7+) Ignored Files
+# ============================
 
-# Local project settings
+# Backup and autosave files
+*.bak
+*.tmp
+*.save
+*.tmp-bak
+*~
+
+# KiCad project metadata (optional but can be ignored if user-specific)
 *.kicad_prl
+*.kicad_wks
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Plot and fabrication output
+*.gbr
+*.drl
+*.ger
+*.pos
+*.zip
+*.pdf
+*.svg
+*.png
+*.step
+*.stp
+*.net
+*.cmp
+*.xml
+*.bom
+
+# Cache and generated files
+*.cache
+*.cache.lib
+*.bak-cache
+*-cache.lib
+
+# Simulator and 3D viewer generated files
+*.wrl
+*.3dshapes/
+fp-info-cache
+
+# KiCad 7 specific folders
+__pycache__/
+*.pyc
+*.tmp
+sym-lib-table-backup
+fp-lib-table-backup
+
+# Ignore user-specific configuration
+sym-lib-table
+fp-lib-table
+eeschema-*.json
+pcbnew-*.json
+
+# ============================
+# OS & Editor Ignored Files
+# ============================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python bytecode (for tools/)
+__pycache__/
+*.py[cod]
